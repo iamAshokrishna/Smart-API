@@ -28,3 +28,25 @@ MongoDB integration, exception handling, and Postman testing.
 | GET    | /api/users/{id}   | Get user by ID           |
 | PUT    | /api/users/{id}   | Update user              |
 | DELETE | /api/users/{id}   | Delete user              |
+
+## Create User
+
+POST /api/users
+{
+  "name": "Ashok",
+  "email": "ashok@example.com",
+  "age": 25
+}
+
+## Configure MongoDB
+
+spring.data.mongodb.uri=mongodb://localhost:27017/smart_api_db
+spring.data.mongodb.database=smart_api_db
+
+## Future Improvements
+
+- Add JWT Authentication
+- Add Swagger API documentation
+- Add pagination & sorting
+- Dockerize the application
+- Add unit tests using JUnit & Mockito
